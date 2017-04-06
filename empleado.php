@@ -24,7 +24,7 @@
 		}
 
 		static function ToString(){
-			return $_apellido.'-'.$_dni.'-'.$_nombre.'-'.$_sexo;
+			return $_legajo.'-'.$_sueldo;
 		}
 	}
 ?>
