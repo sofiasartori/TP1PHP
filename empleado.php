@@ -6,9 +6,26 @@
 		protected $_legajo;
 		protected $_sueldo;
 
-		function __construct($_legajo, $_sueldo){
+		function __construct($_apellido, $_dni, $_nombre, $_sexo, $_legajo, $_sueldo){
+			parent::__construct($_apellido, $_dni, $_nombre, $_sexo);
 			$this->_legajo = $_legajo;
 			$this->_sueldo = $_sueldo;
+		}
+
+		function getApellido(){
+			return parent::getApellido();
+		}
+
+		function getDni(){
+			return parent::getDni();
+		}
+
+		function getNombre(){
+			return parent::getNombre();
+		}
+
+		function getSexo(){
+			return parent::getSexo();
 		}
 
 		function getLegajo(){
